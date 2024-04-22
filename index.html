@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nearby Locations</title>
+    <!-- Page Icon -->
+    <link rel="website icon" type="png" href="./images/page_symbol.png" />
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <!--
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    -->
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html">
+          <div class="logo">
+            <img
+              src="./images/page_symbol.png"
+              alt="Icon"
+              width="50"
+              height="50"
+            />
+            <h2>N|L|4U</h2>
+          </div>
+        </a>
+        <ul>
+          <li>
+            <a href="index.html">Find Places</a>
+          </li>
+          <li>
+            <a href="help.html">Help</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="search_inputs">
+        <div>
+          <label for="location">Sua Localização</label>
+          <input
+            id="autocomplete"
+            name="location"
+            type="text"
+            placeholder="Sua Localização..."
+          />
+        </div>
+        <div>
+          <label for="type">Tipo do Local</label>
+          <select id="type" name="type">
+            <option value="gym">Academia</option>
+            <option value="liquor_store">Adega</option>
+            <option value="lawyer">Advogado</option>
+            <option value="real_estate_agency">Agência Imobiliária</option>
+            <option value="insurance_agency">Agência de Seguros</option>
+            <option value="travel_agency">Agência de Viagens</option>
+            <option value="airport">Aeroporto</option>
+            <option value="lodging">Alojamento</option>
+            <option value="car_rental">Aluguel de Carros</option>
+            <option value="aquarium">Aquario</option>
+            <option value="campground">Área de Camping</option>
+            <option value="storage">Armazem</option>
+            <option value="atm">ATM</option>
+            <option value="tourist_attraction">Atração Turisctica</option>
+            <option value="night_club">Balada</option>
+            <option value="bank">Banco</option>
+            <option value="bar">Bar</option>
+            <option value="library">Biblioteca</option>
+            <option value="bicycle_store">Bicicletaria</option>
+            <option value="bowling_alley">Boliche</option>
+            <option value="fire_station">Bombeiros</option>
+            <option value="hair_care">Cabeleireiro</option>
+            <option value="cafe">Café</option>
+            <option value="casino">Casino</option>
+            <option value="cemetery">Cemitério</option>
+            <option value="locksmith">Chaveiro</option>
+            <option value="movie_theater">Cinema</option>
+            <option value="meal_takeaway">Comida para Viagem</option>
+            <option value="car_dealer">Concessionária</option>
+            <option value="accounting">Contabilidade</option>
+            <option value="post_office">Correios</option>
+            <option value="dentist">Dentista</option>
+            <option value="drugstore">Drogaria</option>
+            <option value="electrician">Eletricista</option>
+            <option value="embassy">Embaixada</option>
+            <option value="roofing_contractor">Empreitaria</option>
+            <option value="plumber">Encanador</option>
+            <option value="meal_delivery">Entrega de Comida</option>
+            <option value="school">Escola</option>
+            <option value="primary_school">Escola Primária</option>
+            <option value="secondary_school">
+              Ensino Médio (Ensino Médio)
+            </option>
+            <option value="local_government_office">
+              Escritório Governamental Local
+            </option>
+            <option value="bus_station">Estação de Ônibus</option>
+            <option value="train_station">Estação de Trem</option>
+            <option value="transit_station">Estação de Transito</option>
+            <option value="subway_station">Estação do Mêtro</option>
+            <option value="parking">Estacionamento</option>
+            <option value="rv_park">Estacionamento para Trailers</option>
+            <option value="stadium">Estádio</option>
+            <option value="university">Faculdade</option>
+            <option value="pharmacy">Farmacia</option>
+            <option value="physiotherapist">Fisioterapeuta</option>
+            <option value="florist">Floricultura</option>
+            <option value="funeral_home">Funerária</option>
+            <option value="art_gallery">Galeria de Arte</option>
+            <option value="hospital">Hospital</option>
+            <option value="church">Igreja</option>
+            <option value="jewelry_store">Joalheria</option>
+            <option value="car_wash">Lava-rápido</option>
+            <option value="laundry">Lavanderia</option>
+            <option value="book_store">Livraria</option>
+            <option value="movie_rental">Locadora</option>
+            <option value="home_goods_store">Loja de Artigos Domésticos</option>
+            <option value="convenience_store">Loja de Conveniência</option>
+            <option value="department_store">Loja de Departamento</option>
+            <option value="electronics_store">Loja de Eletrônicos</option>
+            <option value="hardware_store">Loja de Ferragens</option>
+            <option value="furniture_store">Loja de Móveis</option>
+            <option value="clothing_store">Loja de Roupas</option>
+            <option value="shoe_store">Loja de Sapatos</option>
+            <option value="store">Lojas</option>
+            <option value="doctor">Médicos</option>
+            <option value="mosque">Mesquita</option>
+            <option value="museum">Museu</option>
+            <option value="bakery">Padaria</option>
+            <option value="park">Parque</option>
+            <option value="amusement_park">Parque de Diversões</option>
+            <option value="pet_store">Pet Shop</option>
+            <option value="painter">Pintor</option>
+            <option value="police">Polícia</option>
+            <option value="taxi_stand">Ponto de Taxi</option>
+            <option value="gas_station">Posto de Gasolina</option>
+            <option value="city_hall">Prefeitura</option>
+            <option value="car_repair">Reparo de Carros</option>
+            <option value="restaurant">Restaurante</option>
+            <option value="beauty_salon">Salão de Beleza</option>
+            <option value="shopping_mall">Shopping</option>
+            <option value="synagogue">Sinagoga</option>
+            <option value="spa">Spa</option>
+            <option value="supermarket">Supermercado</option>
+            <option value="hindu_temple">Templo Hindu</option>
+            <option value="courthouse">Tribunal</option>
+            <option value="veterinary_care">Veterinário</option>
+            <option value="zoo">Zoológico</option>
+          </select>
+        </div>
+      </div>
+      <div id="map" style="display: none"></div>
+      <table id="table_places" style="display: none"></table>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <!-- 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    -->
+    <!-- Link for API Key -->
+    <script src="js/map.js" defer></script>
+  </body>
+</html>
