@@ -1,7 +1,9 @@
 ## Nearby Location App 🗺️
 
 This is my final paper project.
-It si designed to be a very simple and easy to use website for older people so they can find activities to do on the modern day to day life
+It is designed to be a very simple and easy to use website for older people so they can find activities to do on the modern day to day life.
+
+*It also contains the use of Google Maps API* 
 
 <div>
   <img src="./assets/Exemple Image.png"/>
