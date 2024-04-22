@@ -1,4 +1,4 @@
-## Nearby Location WebSite 🗺️
+## Nearby Location 🗺️
 
 This is my final paper project.
 It is designed to be a very simple and easy to use website for older people so they can find activities to do on the modern day to day life.
