@@ -4,9 +4,9 @@ This is my final paper project.
 It si designed to be a very simple and easy to use website for older people so they can find activities to do on the modern day to day life
 
 <div>
-  <img src="./assets/Exemple Image.png"/>
-  <img src="./assets/Exemple Image 2.png"/>
-  <img src="./assets/Exemple Image 3.png"/>
+  <img src="./assets/Example Image 1.png"/>
+  <img src="./assets/Example Image 2.png"/>
+  <img src="./assets/Example Image 3.png"/>
 </div>
 
 ### Technologies Used
